@@ -1,0 +1,30 @@
+url = "/"
+layout = "main"
+title = "Home"
+
+[contactForm]
+send_btn_label = "enviar"
+form_success_msg = "todo bien"
+form_error_msg = "se jodio esto"
+==
+<section id="home" class="pb-5" data-scroll-spy>
+    {% partial 'main-slider' %}
+</section>
+<section class="pb-5" id="skills" data-scroll-spy>
+    {% partial 'skills' %}
+</section>
+<section class="pb-5" id="service" data-scroll-spy>
+    {% partial 'service' %}
+</section>
+<section class="pb-5">
+    {% partial 'hero-imag' %}
+</section>
+<section class="pb-5" id="Freelancer" data-scroll-spy>
+    {% partial 'Freelancer' %}
+</section class="pb-5">
+<section id="Resume" data-scroll-spy>
+    {% partial 'resume' %}
+</section>
+<section class="pb-5" id="contact" data-scroll-spy>
+    {% partial 'contact' %}
+</section>

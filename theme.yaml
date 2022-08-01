@@ -1,0 +1,9 @@
+name: tcp-theme
+description: 'TCP theme.'
+author: Sitios Web
+homepage: 'http://sitios.com.uy'
+code: ''
+form: config/fields.yaml
+require:
+    - "janvince.smallcontactform"
+   

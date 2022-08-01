@@ -1,0 +1,78 @@
+tabs:
+        stretch: true
+        defaultTab: Site
+        cssClass: text-blue
+        lazy:
+            - header
+        paneCssClass:
+            1: first-tab
+            2: second-tab
+        icons:
+            Site: icon-folder-open
+            header: icon-gears
+        fields:
+            site_name:
+                label: Site name
+                comment: The website name as it should appear on the front-end
+                default: My Amazing Site!
+                span: right
+                tab: Site
+            logo_text:
+                label: Logo Text
+                comment: The website logo name
+                default: Select Text!
+                span: left
+                tab: Site
+            main_slider_title:
+                label: slider title
+                default: Select Text!
+                span: left
+                tab: main-slide
+            h_text:
+                label: Hero text
+                default: Select Text!
+                span: left
+                tab: hero Imag
+            h_imag:
+                label: Hero image
+                mode: image
+                span: right
+                tab:  hero Imag
+                type: mediafinder        
+            main_slider:
+                type: repeater
+                titleFrom: title_when_collapsed
+                style: collapsed
+                tab: main-slide
+                form:
+                  fields:
+                    description:
+                        label: Description
+                        size: large
+                        span: auto
+                        type: richeditor
+                    Picture:
+                        label: Picture
+                        mode: image
+                        span: auto
+                        type: mediafinder
+            service_slider:
+                type: repeater
+                titleFrom: title_when_collapsed
+                tab: service-slide
+                form:
+                  fields:
+                    Title:
+                        label: Title
+                        span: auto
+                        default: Select Text!
+                    description:
+                        label: Description
+                        size: small
+                        span: auto
+                        type: richeditor
+                    Picture:
+                        label: Picture
+                        mode: image
+                        span: auto
+                        type: mediafinder

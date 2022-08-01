@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!-- Bootstrap CSS -->
+        <link
+            href="{{ 'assets/style/bootstrap.css'|theme }}"
+            rel="stylesheet"
+        />
+        <link
+            href="{{ 'assets/style/bootstrap-icons.css'|theme }}"
+            rel="stylesheet"
+        />
+        <link href="{{ 'assets/style/splide.min.css'|theme }}" rel="stylesheet" />
+        <link href="{{ 'assets/style/style.css'|theme }}" rel="stylesheet" />
+
+        {% styles %}
+    </head>
+    <body>
+    {% partial 'header' %}
+        <main role="main">
+         {% page %}
+        </main>
+    {% partial 'footer' %}
+     {% scripts %}
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="{{ 'assets/js/bootstrap.min.js'|theme }}"></script>
+        <script src="{{ 'assets/js/splide.min.js'|theme }}"></script>
+        <script src="{{ 'assets/js/_core.js'|theme }}"></script>
+    </body>
+</html>

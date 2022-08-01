@@ -1,0 +1,15 @@
+<div class="container">
+<div class="row mx-auto">
+    {% for item in this.theme.service_slider %}
+    <div class="col-md-4 col-12 mb-3 d-flex justify-content-center">
+        <div class="card" style="width: 18rem;">
+            <img src="{{ item.Picture|media }}" class="card-img-top" alt="{{ item.Title }}">
+            <div class="card-body">
+                <h5 class="card-title">{{ item.Title }}</h5>
+                <p class="card-text text-center">{{ item.description|raw }}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    </div>
+</div>

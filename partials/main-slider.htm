@@ -1,0 +1,24 @@
+<section class="splide" aria-labelledby="carousel-heading">
+    <div class="splide__track position-relative ">
+        <div class="position-absolute   bg-text">
+            <div class=" position-absolute top-50 start-50 translate-middle">
+                <p class="fs-4 ">Welcome!</p>
+                <p class="fs-1 fw-bold text-uppercase">{{ this.theme.main_slider_title}}</p>
+                <p class="text-uppercase fs-5 text-muted"> designer . developer . photographer</p>
+                <p class=""><i class="bi bi-facebook p-3"></i><i class="bi bi-twitter p-3"></i><i class="bi bi-instagram p-3"></i><i class="bi bi-behance p-3"></i></p>
+            </div>
+            <div class="position-absolute top-bott start-50 translate-middle animated">
+                <i class="bi bi-chevron-double-down fs-3 fw-bold "></i>
+            </div>
+        </div>
+        <ul class="splide__list bg-text">
+            {% for item in this.theme.main_slider%}
+            <li class="splide__slide ">
+                <img class="h-100" src="{{item.Picture|media}}" alt="{{item.description}}">
+
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+</section>
