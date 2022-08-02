@@ -3,10 +3,24 @@ html{
     
 }
 .active{
-    border-left: 2px solid #000000;
-    border-right: 2px solid #000000;
-    border-radius: 13px 13px 13px 13px;
+  
     }
+  .active::after{
+content: "  ]";
+
+  }
+  .active::before{
+   content: "[  ";
+  }
+  .splide__pagination__page.is-active {
+    background: black;
+    transform: scale(1.4);
+    z-index: 1;
+  
+  }
+  .photo-imag{
+    height: 250gitpx !important;
+  }
 
 .bg-imag {
     width: 100%;

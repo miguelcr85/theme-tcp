@@ -5,5 +5,4 @@ homepage: 'http://sitios.com.uy'
 code: ''
 form: config/fields.yaml
 require:
-    - "janvince.smallcontactform"
-   
+    - "Janvince.Smallcontactform"

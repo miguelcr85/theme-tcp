@@ -1,4 +1,4 @@
-
+{% if this.theme.h_imag %}
 <div class="position-relative mb-2">
   <div class="h-imag"
     style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(173, 162, 162, 0.5)), url('{{this.theme.h_imag|media}}');">
@@ -10,3 +10,20 @@
     </div>
   </div>
 </div>
+{% else %}
+{% set imag = 'asstes/images/random4.jpg'|theme %}
+<div class="position-relative mb-2">
+  <div class="h-imag"
+    style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(52, 44, 44, 0.5)), url('{{imag}}');">
+    <div class="position-absolute top-50 start-50 translate-middle text-center text-light ">
+      <h1 class="pb-5 text-capitalize">this section is customized in theme/setting :)</h1>
+      
+      <a href="#contact" class="btn btn-dark rounded-pill btn-outline-light btn-lg" tabindex="-1" role="button"
+        aria-disabled="true">Hire Mi</a>
+    </div>
+  </div>
+</div>
+
+{% endif %}
+
+
